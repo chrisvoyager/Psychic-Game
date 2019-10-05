@@ -36,12 +36,14 @@ document.onkeyup = function(event) {
 	if (userGuess === computerGuess){
 		wins++;
 		document.querySelector("#wins").innerHTML = "Wins: " + wins;
+		if(userGuess == computerGuess) {
+			alert("Impossible!! You are a legend! Can you do it again?");
 		restart();
-	} 
+	}}
 	else if (guessesLeft === 0) {
 		losses++;
 		document.querySelector("#lose").innerHTML = "Loses: " + losses;
+		alert("Mwahahahaha I knew you didn't have it in you. Off to the shadow realm with you!")
 		restart();
 	}
-  };
-
+}
