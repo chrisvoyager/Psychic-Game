@@ -24,6 +24,16 @@ var restart = function() {
 	var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 }
 
+function show_image(src, width, height, alt) {
+    var img = document.createElement("img");
+    img.src = src="C:/Users/chris/Word-Guess-Game/assets/images/uno.jpg";
+    img.width = 276;
+    img.height = 300;
+	img.alt = alt;
+	
+	document.body.appendChild(img);
+}
+
 document.onkeyup = function(event) {
 	guessesLeft--;
 
@@ -40,10 +50,12 @@ document.onkeyup = function(event) {
 			alert("Impossible!! You are a legend! Can you do it again?");
 		restart();
 	}}
+
 	else if (guessesLeft === 0) {
 		losses++;
 		document.querySelector("#lose").innerHTML = "Loses: " + losses;
 		alert("Mwahahahaha I knew you didn't have it in you. Off to the shadow realm with you!")
+		show_image('C:/Users/chris/Word-Guess-Game/assets/images/uno.jpg');
 		restart();
 	}
 }
