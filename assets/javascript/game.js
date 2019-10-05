@@ -3,7 +3,7 @@ var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l
 var wins = 0;
 var losses = 0;
 var guessesLeft = 9;
-var letterUser = [];
+var letterUser = [""];
 var eachofLetters = null;
 
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
@@ -20,14 +20,14 @@ countGuessesLeft();
 
 var restart = function() {
 	guessesLeft = 9;
-	letterUser = [];
-	var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+	letterUser = [""];
+	computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 }
 
 function show_image(src, width, height, alt) {
     var img = document.createElement("img");
-    img.src = src="C:/Users/chris/Word-Guess-Game/assets/images/uno.jpg";
-    img.width = 276;
+    img.src = src="C:/Users/chris/Word-Guess-Game/assets/images/brain.jpg";
+    img.width = 350;
     img.height = 300;
 	img.alt = alt;
 	
@@ -55,7 +55,7 @@ document.onkeyup = function(event) {
 		losses++;
 		document.querySelector("#lose").innerHTML = "Loses: " + losses;
 		alert("Mwahahahaha I knew you didn't have it in you. Off to the shadow realm with you!")
-		show_image('C:/Users/chris/Word-Guess-Game/assets/images/uno.jpg');
+		show_image('C:/Users/chris/Word-Guess-Game/assets/images/brain.jpg');
 		restart();
 	}
 }
