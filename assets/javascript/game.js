@@ -26,7 +26,7 @@ var restart = function() {
 
 function show_image(src, width, height, alt) {
     var img = document.createElement("img");
-    img.src = src="C:/Users/chris/Word-Guess-Game/assets/images/brain.jpg";
+    img.src = src="https://compote.slate.com/images/fb3403a0-6ffc-471a-8568-b0f01fa3bd6b.jpg";
     img.width = 350;
     img.height = 300;
 	img.alt = alt;
@@ -55,7 +55,7 @@ document.onkeyup = function(event) {
 		losses++;
 		document.querySelector("#lose").innerHTML = "Loses: " + losses;
 		alert("Mwahahahaha I knew you didn't have it in you. Off to the shadow realm with you!")
-		show_image('C:/Users/chris/Word-Guess-Game/assets/images/brain.jpg');
+		show_image('https://compote.slate.com/images/fb3403a0-6ffc-471a-8568-b0f01fa3bd6b.jpg');
 		restart();
 	}
 }
