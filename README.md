@@ -1,1 +1,3 @@
-# Word-Guess-Game
+# Psychic Game
+## Welcome to Psychic!
+In this game, you will try to guess the letter that the computer is thinking of. You have 9 guesses to do so. To start, simply press a key that has the letter you want to guess. If you get it right, the computer will commend you, adn if you get it wrong it will berate you. It will also display an image if you get it wrong that shows how big the computer's brain is.
